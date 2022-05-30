@@ -3,21 +3,6 @@ var todoEl =  document.getElementById("todoInput");
 document.addEventListener("keypress", function(event) {
     if(event.key === "Enter") {
         event.preventDefault();
-        console.log("click",todoEl.value);
-        // var list = document.getElementById("todoList");
-       
-        // var listEl = document.createElement('p'); 
-        // var deletetaskEl = document.createElement('span'); 
-        //     deletetaskEl.innerHTML = "X";
-        //     deletetaskEl.setAttribute("class", "deleteTask");
-        //     deletetaskEl.setAttribute("onClick", "deleteT(event)");
-        //     deletetaskEl.style.float = "right";
-        //     listEl.classList.add("task");
-        //     listEl.setAttribute("onClick", "complete(event)");
-        //     listEl.innerHTML = todoEl.value;
-        //     list.append(listEl);
-        //     listEl.append(deletetaskEl);
-        //     todoEl.value = ""; 
         add();
 }
 });
