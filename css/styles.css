@@ -25,18 +25,18 @@ h1 {
     align-items: flex-start;
     cursor: pointer;
 }
+.task:last-child {
+    margin-bottom: 0;
+}
 .delete {
     display: none;
 }
 .complete {
-    /* background-color: green; */
     color: #fff;
-    /* font-size: 14px; */
     text-decoration: line-through;
 }
 .pending {
     text-decoration: none;
-
 }
 p{
     font-weight: 500;
@@ -79,4 +79,17 @@ input.form-control {
 }
 img {
     width: 20px;
+}
+#todoList {
+    max-height: 300px;
+    overflow: auto;
+}
+#todoList::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+#todoList::-webkit-scrollbar-thumb {
+    background-color: #0f1010;
+    border-radius: 10px;
+    border: 1px solid #025F70;
 }
